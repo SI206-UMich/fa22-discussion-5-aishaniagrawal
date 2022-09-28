@@ -84,12 +84,12 @@ class TestAllMethods(unittest.TestCase):
 
 	## Check to see whether warehouse correctly returns the item with the most stock
 	def test_warehouse_max_stocks(self):
-		self.assertEqual(get_max_stock("Water"))
+		self.assertEqual(get_max_stock(stock), "Water")
 
 
 	# Check to see whether the warehouse correctly return the item with the highest price
 	def test_warehouse_max_price(self):
-		self.assertEqual(get_max_price("Beer"))
+		self.assertEqual(get_max_price(price), 6)
 		
 
 def main():
